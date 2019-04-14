@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.5)
 project(dovecrest)
 
 file(GLOB_RECURSE sources src/dovecrest/*.cpp src/dovecrest/*.h)
