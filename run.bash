@@ -1,7 +1,8 @@
 #!/bin/bash
 
-gitroot=$(git rev-parse --show-toplevel)
-pushd ${gitroot}/build
+build=$(git rev-parse --show-toplevel)/build
+mkdir -p  ${build}
+pushd ${build}
 cmake ..
 make
 ./dovecrest
